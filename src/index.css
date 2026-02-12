@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Helvetica Now';
+  src: url('./assests/fonts/HelveticaNowVar\ \(2\).ttf') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk';
+  src: url('./assests/fonts/Medium25.ttf') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+body{
+  background-color: #171313;
+}
+
+@layer base {
+  :root {
+    --background: #171313;
+    --foreground: #EFE9E4;
+    --card: #171313;
+    --card-foreground: #EFE9E4;
+    --popover: #171313;
+    --popover-foreground: #EFE9E4;
+    --primary: #F36E3F;
+    --primary-foreground: #FFFFFF;
+    --secondary: #4A3F3B;
+    --secondary-foreground: #EFE9E4;
+    --muted: #4A3F3B;
+    --muted-foreground: #A89E98;
+    --accent: #F36E3F;
+    --accent-foreground: #FFFFFF;
+    --destructive: #E53935;
+    --destructive-foreground: #FFFFFF;
+    --border: #4A3F3B;
+    --input: #4A3F3B;
+    --ring: #F36E3F;
+    --radius: 0.25rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Helvetica Now', 'Sharp Grotesk', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-ae {
+    @apply inline-block bg-primary text-primary-foreground px-8 py-3 text-sm font-bold tracking-widest uppercase hover:opacity-90 transition-opacity;
+  }
+  .btn-ae-outline {
+    @apply inline-block border-2 border-primary text-primary px-8 py-3 text-sm font-bold tracking-widest uppercase hover:bg-primary hover:text-primary-foreground transition-colors;
+  }
+  .section-title {
+    @apply text-2xl md:text-3xl font-extrabold tracking-tight text-foreground uppercase;
+  }
+}
