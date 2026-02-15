@@ -30,7 +30,7 @@ export default function HowWorkPage() {
         </div>
       </div>
 
-      <div className='block md:hidden relative overflow-hidden rounded-lg bg-red-500'>
+      <div className='block md:hidden relative overflow-hidden rounded-lg '>
         <img src={main3} alt='how-work-2' className='w-full h-auto object-cover' />
         <div   className='absolute inset-0  left-0 w-full'>
           <div style={{background:" linear-gradient(90deg, #433733 53.65%, rgba(106, 73, 36, 0.45) 74.28%)"}} className='flex flex-col  gap-8 items-start justify-center px-4 h-full w-full '>
