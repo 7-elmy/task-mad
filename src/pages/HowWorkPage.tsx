@@ -2,7 +2,7 @@ import React from 'react'
 import main from '@/assests/main.png'
 import main2 from '@/assests/image.png'
 import main3 from '@/assests/mobilescrren.png'
-import InteractiveDemo from '@/components/howwork/InteractiveDemo'
+
 
 export default function HowWorkPage() {
   return (

@@ -1,5 +1,6 @@
-import { createContext, useContext, useState, useCallback, useEffect, ReactNode } from 'react';
 import translations from '@/data/translations';
+import { ReactNode, createContext, useCallback, useContext, useEffect, useState } from 'react';
+
 
 type Locale = 'en' | 'ar';
 

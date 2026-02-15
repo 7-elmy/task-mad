@@ -4,8 +4,8 @@ import man from '@/assests/man.png'
 import shield from '@/assests/shield.png'
 import shield2 from '@/assests/shield2.png'
 import shield3 from '@/assests/shield3.png'
-import { Button } from '../ui/button';
 import logolite from "@/assests/logolite.png"
+import { Button } from '@/components/ui/button'
 
 /* ── chat bubble ── */
 const ChatBubble = ({
