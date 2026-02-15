@@ -91,7 +91,7 @@ export default function InteractiveDemo() {
       {/* ── Main wrapper ── */}
       <div className='rounded-xl sm:rounded-2xl overflow-hidden'>
         {/* ── Content area ── */}
-        <div className='flex flex-col gap-4 md:flex-row md:gap-4 lg:gap-6'>
+        <div className='flex flex-col-reverse gap-4 md:flex-row md:gap-4 lg:gap-6'>
           {/* ── Left sidebar ── */}
           <div className='w-full md:w-[340px] lg:w-[360px] xl:w-[384px] flex-shrink-0 space-y-4 rounded-[12px] sm:rounded-[14px] md:rounded-[16px]'>
             {/* Progress Tracker background: linear-gradient(180deg, rgba(67, 55, 51, 0) 0%, #433733 45.27%);
@@ -243,7 +243,7 @@ export default function InteractiveDemo() {
                   placeholder='Type your message..'
                   className='flex-1 min-w-0 bg-transparent text-white/80 text-[13px] sm:text-[14px] md:text-sm placeholder:text-white/30 placeholder:font-light placeholder:text-[14px] md:placeholder:text-[16px] placeholder:leading-[1] placeholder:tracking-[0] placeholder:font-helvetica outline-none py-2'
                 />
-                <button style={{ background: '#F26E3E80' }} className='font-helvetica p-2 rounded-full px-4 sm:px-5 md:px-6 font-light text-[13px] sm:text-[14px] md:text-[16px] leading-[1] tracking-[0] text-center text-white shrink-0 hover:opacity-90 transition-opacity'>
+                <button style={{ background: '#F26E3E80' }} className='font-helvetica p-2 rounded-full px-6 sm:px-5 md:px-6 font-light text-[13px] sm:text-[14px] md:text-[16px] leading-[1] tracking-[0] text-center text-white shrink-0 hover:opacity-90 transition-opacity'>
                   Send
                 </button>
               </div>
