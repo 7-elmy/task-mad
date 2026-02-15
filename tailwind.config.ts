@@ -17,6 +17,7 @@ export default {
         sans: ["Avenir Next Medium", "HelveticaNeue-Medium", "Helvetica Medium", "sans-serif"],
           helvetica: ['"Helvetica Now"', 'sans-serif'],
           sharp: ['"Sharp Grotesk"', 'sans-serif'],
+          "sharp-bold": ['"Sharp bold"', 'sans-serif'],
       
       },
       colors: {

@@ -17,6 +17,14 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Sharp bold';
+  src: url('./assests/fonts/Bold20.ttf') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 body{
   background-color: #171313;
 }

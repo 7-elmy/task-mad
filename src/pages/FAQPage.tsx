@@ -5,7 +5,7 @@ export default function FAQPage() {
     <div className='container mx-auto px-5 md:px-32  py-[48px] md:py-[62px] '>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
         {/*  */}
-      <div className='flex flex-col  md:justify-end items-center'>
+      <div className='flex flex-col  md:justify-center md:h-full md:items-center'>
         <div className='flex  items-center py-[24px] md:py-[32px]'>
         <img src={faq} alt="faq" className='w-[32px] h-[32px]' />
       <h2 className="font-helvetica px-[20px] text-[24px] font-bold text-white leading-none tracking-normal">
@@ -13,7 +13,7 @@ export default function FAQPage() {
 </h2>
 
         </div>
-        <p className="font-helvetica block md:hidden text-white px-2 text-[16px] font-light leading-none tracking-normal">
+        <p className="font-helvetica block md:hidden text-white px-2 text-[16px] font-light leading-relaxed tracking-normal">
         A skilled, top-tier player will boost your account. Our team consists primarily of elite players who have passed rigorous evaluations. This includes a careful review of their past gaming records. We maintain strict standards of conduct and do not tolerate any negative behavior, either towards customers or in-game.
 </p>
       </div>
@@ -21,12 +21,12 @@ export default function FAQPage() {
       <div>
         <div className='flex  items-center py-[32px]'>
         <img src={faq} alt="faq" className='w-[32px] h-[32px]' />
-      <h2 className="font-helvetica px-[20px] text-[24px] font-bold text-white leading-none tracking-normal">
+      <h2 className="font-helvetica px-[20px] text-[24px] font-bold text-white leading-relaxed tracking-normal">
       What happens next once I place an order?
 </h2>
 
         </div>
-        <p className="font-helvetica text-white px-2 text-[16px] font-light leading-none tracking-normal">
+        <p className="font-helvetica text-white px-2 text-[16px] font-light leading-relaxed tracking-normal">
         Once you place an order, you'll be guided to our website to quickly create an account. This process takes about 1-2 minutes. Next, you'll need to provide the login information for your game account. Your order will then be processed by our team, and we'll start working on it right away. This typically takes 5-10 minutes.
 </p>
       </div>
@@ -34,12 +34,12 @@ export default function FAQPage() {
       <div>
         <div className='flex  items-center py-[32px]'>
         <img src={faq} alt="faq" className='w-[32px] h-[32px]' />
-      <h2 className="font-helvetica px-[20px] text-[24px] font-bold text-white leading-none tracking-normal">
+      <h2 className="font-helvetica px-[20px] text-[24px] font-bold text-white leading-relaxed tracking-normal">
       Is there a chance my account could be banned?
 </h2>
 
         </div>
-        <p className="font-helvetica text-white px-2 text-[16px] font-light leading-none tracking-normal">
+        <p className="font-helvetica text-white px-2 text-[16px] font-light leading-relaxed tracking-normal">
         We've not observed any bans resulting from level boosting services. For the present, it's generally considered safe.
 </p>
       </div>
@@ -47,12 +47,12 @@ export default function FAQPage() {
       <div>
         <div className='flex  items-center py-[32px]'>
         <img src={faq} alt="faq" className='w-[32px] h-[32px]' />
-      <h2 className="font-helvetica px-[20px] text-[24px] font-bold text-white leading-none tracking-normal">
+      <h2 className="font-helvetica px-[20px] text-[24px] font-bold text-white leading-relaxed tracking-normal">
       Is it possible to watch a live stream of the boosting process?
 </h2>
 
         </div>
-        <p className="font-helvetica text-white px-2 text-[16px] font-light leading-none tracking-normal">
+        <p className="font-helvetica text-white px-2 text-[16px] font-light leading-relaxed tracking-normal">
         Absolutely! To watch your account boost live, simply select the streaming option when placing your order.
 </p>
       </div>
