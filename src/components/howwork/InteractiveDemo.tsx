@@ -5,21 +5,7 @@ import shield from '@/assests/shield.png'
 import shield2 from '@/assests/shield2.png'
 import shield3 from '@/assests/shield3.png'
 import { Button } from '../ui/button';
-/* ── tiny avatar helper ── */
-const Avatar = ({ src, alt, size = 40 }: { src?: string; alt: string; size?: number }) => (
-  <div
-    className='rounded-full overflow-hidden bg-[#4A3F3B] flex-shrink-0'
-    style={{ width: size, height: size }}
-  >
-    {src ? (
-      <img src={src} alt={alt} className='w-full h-full object-cover' />
-    ) : (
-      <div className='w-full h-full flex items-center justify-center text-white/60 text-sm font-bold'>
-        {alt.charAt(0)}
-      </div>
-    )}
-  </div>
-)
+import logolite from "@/assests/logolite.png"
 
 /* ── chat bubble ── */
 const ChatBubble = ({
@@ -47,7 +33,7 @@ const ChatBubble = ({
   }
 
   return (
-    <div className={`flex ${isOwn ? 'justify-end' : 'justify-start'} mb-3`}>
+    <div className={`flex ${isOwn ? 'justify-end' : 'justify-start'} `}>
       <div
         className={`rounded-xl font-light text-[14px] sm:text-[16px] leading-[1.3] sm:leading-[1] tracking-[0] font-helvetica px-3 py-2 max-w-[92%] sm:max-w-[70%] ${
           isOwn
@@ -66,7 +52,7 @@ export default function InteractiveDemo() {
   const [activeChat, setActiveChat] = useState<'booster' | 'manager'>('booster')
 
   return (
-    <section className='container mx-auto px-4 sm:px-5 md:px-28 py-8 sm:py-12 md:py-[62px]'>
+    <section className='container mx-auto px-4 sm:px-5 md:px-28 py-8 sm:py-12 md:py-[62px] md:pb-[76px]'>
       {/* ── Section title ── */}
       <div className='text-center mb-6 sm:mb-8 md:mb-16'>
       <h1 className="font-sharp text-[22px] sm:text-[24px] md:text-[48px] font-semibold leading-tight sm:leading-none tracking-normal flex flex-col md:flex-row items-center justify-center gap-1 sm:gap-2">
@@ -175,8 +161,8 @@ export default function InteractiveDemo() {
           </div>
 
           {/* ── Chat section ── */}
-          <div className='flex-1 rounded-[12px] md:rounded-[16px] bg-[#332A27] flex flex-col min-h-[360px] sm:min-h-[400px] md:min-h-[500px]'>
-            <div className='p-3 sm:p-5'>
+          <div className='flex-1 rounded-[16px] bg-[#332A27] flex flex-col min-h-[360px] sm:min-h-[400px] md:min-h-[500px]'>
+            <div className='p-3   sm:p-5'>
               {/* Chat tabs */}
               <div className='flex p-1 rounded-full w-full items-center bg-[#1E1814] border border-white/10'>
                 <button
@@ -241,8 +227,8 @@ export default function InteractiveDemo() {
               />
 
               <div className='flex items-start gap-2 mb-3'>
-                <div className='w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#F36E3F]/20 flex items-center justify-center flex-shrink-0 mt-0.5'>
-                  <span className='text-[10px]'>🔥</span>
+                <div className='w-[32px] h-[32px]  rounded-[8px] bg-[#201914] flex items-center justify-center flex-shrink-0 mt-0.5'>
+                  <img src={logolite} alt="logolite" className='w-full h-full' />
                 </div>
                 <ChatBubble
                   message='Hello! Thanks for the tip, it means a lot for us.'
@@ -253,7 +239,7 @@ export default function InteractiveDemo() {
             </div>
 
             {/* Chat input */}
-            <div className='px-3 sm:px-4 md:px-6 py-2.5 sm:py-3 border-t border-white/10'>
+            <div className='px-3 sm:px-4 rounded-b-[16px] bg-[#433733] md:px-6 py-2.5 sm:py-3 '>
               <div className='flex items-center gap-1 sm:gap-2 bg-[#2A2118] rounded-full pl-3 pr-1 sm:ps-3 sm:pe-1 py-1'>
                 <input
                   type='text'

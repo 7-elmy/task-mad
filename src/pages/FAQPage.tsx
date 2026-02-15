@@ -2,11 +2,11 @@ import React from 'react'
 import faq from '@/assests/Help.png'
 export default function FAQPage() {
   return (
-    <div className='container mx-auto px-5 md:px-32  py-[62px] '>
+    <div className='container mx-auto px-5 md:px-32  py-[48px] md:py-[62px] '>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
         {/*  */}
       <div className='flex flex-col  md:justify-end items-center'>
-        <div className='flex  items-center py-[32px]'>
+        <div className='flex  items-center py-[24px] md:py-[32px]'>
         <img src={faq} alt="faq" className='w-[32px] h-[32px]' />
       <h2 className="font-helvetica px-[20px] text-[24px] font-bold text-white leading-none tracking-normal">
   Who will be handling my account boost?
