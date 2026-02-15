@@ -94,8 +94,10 @@ export default function InteractiveDemo() {
         <div className='flex flex-col gap-4 md:flex-row md:gap-4 lg:gap-6'>
           {/* ── Left sidebar ── */}
           <div className='w-full md:w-[340px] lg:w-[360px] xl:w-[384px] flex-shrink-0 space-y-4 rounded-[12px] sm:rounded-[14px] md:rounded-[16px]'>
-            {/* Progress Tracker */}
-            <div style={{ background: 'linear-gradient(180deg, #E7C25B 0%, #433733 45.27%)' }} className='rounded-xl p-3 sm:p-4 md:p-5'>
+            {/* Progress Tracker background: linear-gradient(180deg, rgba(67, 55, 51, 0) 0%, #433733 45.27%);
+ background: linear-gradient(180deg, rgba(67, 55, 51, 0) 0%, #433733 45.27%) */}
+            {/* <div style={{ background: 'linear-gradient(180deg, #E7C25B 0%,  #433733 45.27%)' }} className='rounded-xl p-3 sm:p-4 md:p-5'> */}
+            <div  className='bg-[linear-gradient(180deg,#E7C25B_0%,#433733_80%)] rounded-xl p-3 sm:p-4 md:p-5'>
               <h3 className='font-helvetica font-bold text-[14px] sm:text-[15px] md:text-[16px] leading-[100%] tracking-[0%] text-white mb-3 sm:mb-4'>Progress Tracker</h3>
               <div className='bg-[#201914] rounded-[8px] flex justify-center items-center gap-1 sm:gap-2 overflow-hidden'>
                 <div className='flex items-center gap-1.5 sm:gap-2 p-2 sm:p-3 rounded-[16px] min-w-0'>
