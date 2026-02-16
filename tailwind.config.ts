@@ -18,6 +18,7 @@ export default {
           helvetica: ['"Helvetica Now"', 'sans-serif'],
           sharp: ['"Sharp Grotesk"', 'sans-serif'],
           "sharp-bold": ['"Sharp bold"', 'sans-serif'],
+          "sharp-semi": ['"Sharp semi"', 'sans-serif'],
       
       },
       colors: {
