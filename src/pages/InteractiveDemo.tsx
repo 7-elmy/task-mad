@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import { Send, Pause, ChevronRight, Shield, User } from 'lucide-react'
+import { Send, Pause, ChevronRight, Shield, User, Info } from 'lucide-react'
 import man from '@/assests/man.png'
 import shield from '@/assests/shield.png'
 import shield2 from '@/assests/shield2.png'
 import shield3 from '@/assests/shield3.png'
 import logolite from "@/assests/logolite.png"
+import info from "@/assests/Infooutline.png"
 import { Button } from '@/components/ui/button'
 
 /* ── chat bubble ── */
@@ -97,8 +98,9 @@ export default function InteractiveDemo() {
             {/* Progress Tracker background: linear-gradient(180deg, rgba(67, 55, 51, 0) 0%, #433733 45.27%);
  background: linear-gradient(180deg, rgba(67, 55, 51, 0) 0%, #433733 45.27%) */}
             {/* <div style={{ background: 'linear-gradient(180deg, #E7C25B 0%,  #433733 45.27%)' }} className='rounded-xl p-3 sm:p-4 md:p-5'> */}
-            <div  className='bg-[linear-gradient(180deg,#E7C25B_0%,#433733_80%)] rounded-xl p-3 sm:p-4 md:p-5'>
-              <h3 className='font-helvetica font-bold text-[14px] sm:text-[15px] md:text-[16px] leading-[100%] tracking-[0%] text-white mb-3 sm:mb-4'>Progress Tracker</h3>
+            <div style={{background: 'linear-gradient(180deg, rgba(226, 207, 103, 0.7) 0%, rgba(67, 55, 51, 0) 100%)'}}  className=' rounded-xl '>
+              <div style={{background: 'linear-gradient(180deg, rgba(67, 55, 51, 0) 0%, #433733 45.27%)'}} className=' rounded-xl p-5'>
+              <h3 className='font-helvetica  font-bold text-[14px] sm:text-[15px] md:text-[16px] leading-[100%] tracking-[0%] text-white mb-3 sm:mb-4'>Progress Tracker</h3>
               <div className='bg-[#201914] rounded-[8px] flex justify-center items-center gap-1 sm:gap-2 overflow-hidden'>
                 <div className='flex items-center gap-1.5 sm:gap-2 p-2 sm:p-3 rounded-[16px] min-w-0'>
                   <img src={shield2} alt="shield" className='w-6 h-6 sm:w-7 sm:h-7 md:w-[32px] md:h-[32px] flex-shrink-0' />
@@ -118,7 +120,7 @@ export default function InteractiveDemo() {
                     <div className='absolute inset-0  ' />
                     <div className='w-full h-full flex items-center justify-center'>
                       <div className='text-center'>
-                        <img src={shield3} alt="shield" className='w-full h-full' />
+                        <img src={shield3} alt="shield" className='w-full  h-full' />
                         <div className='w-8 h-8 sm:w-10 sm:h-10 bg-[#FFD54F]/20 rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10' />
                       </div>
                     </div>
@@ -127,13 +129,16 @@ export default function InteractiveDemo() {
                 <p className='font-helvetica text-[14px] sm:text-[15px] md:text-[16px] font-light leading-none tracking-normal text-center text-white/80 mb-3 sm:mb-4'>Gold II</p>
               </div>
               {/* Pause button */}
-              <button className='w-full py-2.5 sm:py-3 bg-[#F36E3F] hover:bg-[#F36E3F]/80 rounded-full text-white font-semibold text-sm sm:text-[15px] md:text-base font-sharp leading-none tracking-normal flex items-center justify-center gap-2 transition-colors'>
+              <button className='md:w-[336px] w-[280px] py-2.5 sm:py-3 bg-[#F36E3F] hover:bg-[#F36E3F]/80 rounded-full text-white font-semibold text-sm sm:text-[15px] md:text-base font-sharp  flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040] gap-2 mx-auto'>
                 <Pause className='w-4 h-4' fill='currentColor' />
                 Pause
               </button>
-              <p className='text-white/30 text-center font-helvetica text-[8px] font-light leading-none tracking-normal mt-2'>
-                if you want to save the increase
+              <p className='text-white/50 text-center flex items-center justify-center gap-1 font-helvetica text-[8px] font-light leading-none tracking-normal mt-2'>
+               {/* <img src={info} alt="info" className='w-4 h-4' />   Pause if you want to stop the booster. */}
+              <Info className='w-4 h-4 bg-transparent '  />   Pause if you want to stop the booster.
+              
               </p>
+              </div>
             </div>
             {/* Account Details */}
             <div className='bg-[#433733] rounded-xl p-3 sm:p-4 md:p-5 border border-white/5'>

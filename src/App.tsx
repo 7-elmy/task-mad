@@ -8,8 +8,7 @@ import { CartProvider } from "@/contexts/CartContext";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Index from "./pages/Index";
-import CategoryPage from "./pages/CategoryPage";
-import ProductPage from "./pages/ProductPage";
+
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
