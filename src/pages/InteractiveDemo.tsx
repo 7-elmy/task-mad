@@ -98,8 +98,8 @@ export default function InteractiveDemo() {
             {/* Progress Tracker background: linear-gradient(180deg, rgba(67, 55, 51, 0) 0%, #433733 45.27%);
  background: linear-gradient(180deg, rgba(67, 55, 51, 0) 0%, #433733 45.27%) */}
             {/* <div style={{ background: 'linear-gradient(180deg, #E7C25B 0%,  #433733 45.27%)' }} className='rounded-xl p-3 sm:p-4 md:p-5'> */}
-            <div style={{background: 'linear-gradient(180deg, rgba(226, 207, 103, 0.7) 0%, rgba(67, 55, 51, 0) 100%)'}}  className='rounded-xl md:flex-1 md:min-w-0'>
-              <div style={{background: 'linear-gradient(180deg, rgba(67, 55, 51, 0) 0%, #433733 45.27%)'}} className=' rounded-xl p-5'>
+            <div style={{background: 'linear-gradient(180deg, rgba(226, 207, 103, 0.7) 0%, rgba(67, 55, 51, 0) 100%)'}}  className='rounded-xl  md:flex-1 md:min-w-0'>
+              <div style={{background: 'linear-gradient(180deg, rgba(67, 55, 51, 0) 0%, #433733 45.27%)'}} className='  rounded-xl p-5'>
               <h3 className='font-helvetica  font-bold text-[14px] sm:text-[15px] md:text-[16px] leading-[100%] tracking-[0%] text-white mb-3 sm:mb-4'>Progress Tracker</h3>
               <div className='bg-[#201914] rounded-[8px] flex justify-center items-center gap-1 sm:gap-2 overflow-hidden'>
                 <div className='flex items-center gap-1.5 sm:gap-2 p-2 sm:p-3 rounded-[16px] min-w-0'>
