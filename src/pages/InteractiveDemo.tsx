@@ -92,13 +92,13 @@ export default function InteractiveDemo() {
       {/* ── Main wrapper ── */}
       <div className='rounded-xl sm:rounded-2xl overflow-hidden'>
         {/* ── Content area ── */}
-        <div className='flex flex-col-reverse gap-4 md:flex-row md:gap-4 lg:gap-6'>
-          {/* ── Left sidebar ── */}
-          <div className='w-full md:w-[340px] lg:w-[360px] xl:w-[384px] flex-shrink-0 space-y-4 rounded-[12px] sm:rounded-[14px] md:rounded-[16px]'>
+        <div className='flex flex-col-reverse gap-4 md:flex-col md:gap-4 lg:flex-row lg:gap-6'>
+          {/* ── Left sidebar (tablet: under chat, side by side) ── */}
+          <div className='w-full md:w-full md:flex md:flex-row md:gap-4 md:order-2 lg:order-none lg:w-[360px] lg:flex-none lg:flex-col lg:space-y-4 xl:w-[384px] flex-shrink-0 space-y-4 md:space-y-0 rounded-[12px] sm:rounded-[14px] md:rounded-[16px]'>
             {/* Progress Tracker background: linear-gradient(180deg, rgba(67, 55, 51, 0) 0%, #433733 45.27%);
  background: linear-gradient(180deg, rgba(67, 55, 51, 0) 0%, #433733 45.27%) */}
             {/* <div style={{ background: 'linear-gradient(180deg, #E7C25B 0%,  #433733 45.27%)' }} className='rounded-xl p-3 sm:p-4 md:p-5'> */}
-            <div style={{background: 'linear-gradient(180deg, rgba(226, 207, 103, 0.7) 0%, rgba(67, 55, 51, 0) 100%)'}}  className=' rounded-xl '>
+            <div style={{background: 'linear-gradient(180deg, rgba(226, 207, 103, 0.7) 0%, rgba(67, 55, 51, 0) 100%)'}}  className='rounded-xl md:flex-1 md:min-w-0'>
               <div style={{background: 'linear-gradient(180deg, rgba(67, 55, 51, 0) 0%, #433733 45.27%)'}} className=' rounded-xl p-5'>
               <h3 className='font-helvetica  font-bold text-[14px] sm:text-[15px] md:text-[16px] leading-[100%] tracking-[0%] text-white mb-3 sm:mb-4'>Progress Tracker</h3>
               <div className='bg-[#201914] rounded-[8px] flex justify-center items-center gap-1 sm:gap-2 overflow-hidden'>
@@ -129,7 +129,7 @@ export default function InteractiveDemo() {
                 <p className='font-helvetica text-[14px] sm:text-[15px] md:text-[16px] font-light leading-none tracking-normal text-center text-white/80 mb-3 sm:mb-4'>Gold II</p>
               </div>
               {/* Pause button */}
-              <button className='md:w-[336px] w-[280px] py-2.5 sm:py-3 bg-[#F36E3F] hover:bg-[#F36E3F]/80 rounded-full text-white font-semibold text-sm sm:text-[15px] md:text-base font-sharp  flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040] gap-2 mx-auto'>
+              <button className='md:w-full w-[280px] py-2.5 sm:py-3 bg-[#F36E3F] hover:bg-[#F36E3F]/80 rounded-full text-white font-semibold text-sm sm:text-[15px] md:text-base font-sharp  flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040] gap-2 mx-auto'>
                 <Pause className='w-4 h-4' fill='currentColor' />
                 Pause
               </button>
@@ -141,29 +141,33 @@ export default function InteractiveDemo() {
               </div>
             </div>
             {/* Account Details */}
-            <div className='bg-[#433733] rounded-xl p-3 sm:p-4 md:p-5 border border-white/5'>
+            <div className='bg-[#433733] rounded-xl p-5 border border-white/5 md:flex-1 md:min-w-0 md:flex md:flex-col lg:flex-none lg:block'>
               <h3 className='text-white font-sharp font-semibold text-[13px] sm:text-[14px] md:text-base mb-3 sm:mb-4'>Account Details</h3>
-              <div className='space-y-2 sm:space-y-3'>
+              <div className='space-y-2 sm:space-y-3 md:flex-1 md:flex md:flex-col md:justify-between md:space-y-0 lg:flex-none lg:block lg:space-y-3'>
                 {[
                   { label: 'In Game Name:', value: 'Game Name' },
                   { label: 'Server:', value: 'Europe' },
                   { label: 'Username:', value: 'Username' },
                   { label: 'Password:', value: 'Password' },
                 ].map((item) => (
-                  <div key={item.label} className='flex items-center justify-between gap-2 mb-3 border-b border-[#201914]/30 pb-3 text-[13px] sm:text-[14px] md:text-[16px]'>
+                  <div key={item.label} className='flex items-center justify-between gap-2 mb-3 border-b border-[#201914]/30 pb-3 text-[13px] sm:text-[14px] md:text-[16px] md:mb-0 md:pb-3 md:flex-1 md:flex md:items-center lg:flex-initial lg:mb-3'>
                     <span className='text-[#FFFFFF80] font-helvetica font-light leading-[100%] tracking-[0%] shrink-0'>{item.label}</span>
                     <span className='text-white font-helvetica font-light leading-[1] tracking-[0] truncate text-right'>{item.value}</span>
                   </div>
                 ))}
               </div>
-              <button className='w-full font-normal border mt-3 sm:mt-4 border-[#F26E3E] rounded-[12px] sm:rounded-[16px] px-4 py-2 text-[11px] sm:text-[12px] leading-[1] tracking-[0] text-center text-white hover:bg-[#F26E3E]/10 transition-colors'>
+              <div className='flex justify-center items-center md:shrink-0'>
+
+              {/* <button className='w-[280px] md:w-[336px] mx-auto font-normal border mt-3 sm:mt-4 border-[#F26E3E] rounded-[12px] sm:rounded-[16px] px-4 py-2.5 text-[11px] sm:text-[12px] leading-[1] tracking-[0] text-center text-white hover:bg-[#F26E3E]/10 transition-colors'> */}
+              <button className='md:w-full mt-4 w-[280px] py-2.5 sm:py-3 border border-[#F36E3F] hover:bg-[#F36E3F]/10 rounded-full text-white font-semibold text-sm sm:text-[15px] md:text-base font-sharp  flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040] gap-2 mx-auto'>
                 Update Details
               </button>
+              </div>
             </div>
           </div>
 
-          {/* ── Chat section ── */}
-          <div className='flex-1 min-w-0 rounded-[12px] sm:rounded-[14px] md:rounded-[16px] bg-[#332A27] flex flex-col min-h-[340px] sm:min-h-[380px] md:min-h-[440px] lg:min-h-[500px] xl:min-h-[540px]'>
+          {/* ── Chat section (tablet: on top) ── */}
+          <div className='flex-1 min-w-0 rounded-[12px] sm:rounded-[14px] md:rounded-[16px] bg-[#332A27] flex flex-col min-h-[340px] sm:min-h-[380px] md:min-h-[440px] md:order-1 lg:order-none lg:min-h-[500px] xl:min-h-[540px]'>
             <div className='p-3 sm:p-4 md:p-5'>
               {/* Chat tabs */}
               <div className='flex p-1 rounded-full w-full items-center bg-[#1E1814] border border-white/10'>
