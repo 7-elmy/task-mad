@@ -74,16 +74,16 @@ export default function InteractiveDemo() {
           </div>
         </div>
         <div className='flex flex-wrap md:flex-nowrap justify-center md:justify-end items-center gap-2 sm:gap-3 md:gap-4 w-full'>
-          <Button variant='default' className="min-w-0 w-[calc(50%-4px)]  md:w-auto md:min-w-0 md:flex-shrink-0 text-[10px] sm:text-[11px] md:text-[14px] lg:text-[16px] text-[#1E1814] hover:bg-[#FFC439]/80 h-9 sm:h-[38px] md:h-[40px] bg-[#FFC439] rounded-[48px] py-2 px-3 sm:px-4 md:px-6 md:whitespace-nowrap">
+          <button className="min-w-0 w-[150px] font-bold text-[10px] leading-[1] tracking-[0] text-center font-helvetica  md:w-auto md:min-w-0 md:flex-shrink-0  sm:text-[11px] md:text-[14px] lg:text-[16px] text-[#1E1814] hover:bg-[#FFC439]/80 h-9 sm:h-[38px] md:h-[40px] bg-[#FFC439] rounded-[48px] py-2 px-3 sm:px-4 md:px-6 md:whitespace-nowrap">
             Available to Play
-          </Button>
-          <Button className="min-w-0 w-[calc(50%-4px)] sm:w-auto text-[10px] sm:text-[11px] md:text-[14px] lg:text-[16px] bg-[#1E1814] h-9 sm:h-[38px] md:h-[40px] text-white rounded-[48px] py-2 px-3 sm:px-4 md:px-6 opacity-100 md:whitespace-nowrap">
+          </button>
+          <button className="min-w-0 w-[150px] sm:w-auto text-[10px] leading-[1] tracking-[0] text-center font-helvetica   sm:text-[11px] md:text-[14px] lg:text-[16px] bg-[#1E1814] h-9 sm:h-[38px] md:h-[40px] text-white rounded-[48px] py-2 px-3 sm:px-4 md:px-6 opacity-100 md:whitespace-nowrap">
             Extend Order
-          </Button>
-          <Button className="min-w-0 w-[calc(50%-4px)] sm:w-[95px] md:w-auto md:min-w-0 md:flex-shrink-0 text-[10px] sm:text-[11px] md:text-[14px] lg:text-[16px] text-[#3FBA6E] hover:bg-[#172924]/80 h-9 sm:h-[38px] md:h-[40px] bg-[#172924] rounded-[48px] py-2 px-3 sm:px-4 md:px-6 opacity-100 md:whitespace-nowrap">
+          </button>
+          <button className="min-w-0 w-[100px] sm:w-[95px] md:w-auto md:min-w-0 font-bold text-[10px] leading-[1] tracking-[0] text-center md:flex-shrink-0 font-helvetica sm:text-[11px] md:text-[14px] lg:text-[16px] text-[#3FBA6E] hover:bg-[#172924]/80 h-9 sm:h-[38px] md:h-[40px] bg-[#172924] rounded-[48px] py-2 px-3 sm:px-4 md:px-6 opacity-100 md:whitespace-nowrap">
             Tip
-          </Button>
-          <Button className="hidden lg:flex w-auto min-w-0 flex-shrink-0 text-[14px] lg:text-[16px] text-white h-[40px] bg-[#EE3E3E] rounded-[48px] py-2 px-5 lg:px-6 opacity-100 whitespace-nowrap">
+          </button>
+          <Button variant='default' className="hidden  lg:flex min-w-0 w-[100px] sm:w-[95px] md:w-auto md:min-w-0 font-bold text-[8px] leading-[1] tracking-[0] text-center md:flex-shrink-0 font-helvetica sm:text-[11px] md:text-[14px] lg:text-[16px] text-white h-[40px] bg-[#EE3E3E] hover:bg-[#EE3E3E] rounded-[48px] py-2 px-3 sm:px-4 md:px-6 opacity-100 md:whitespace-nowrap">
             Report
           </Button>
         </div>
