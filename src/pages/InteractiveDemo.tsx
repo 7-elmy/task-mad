@@ -97,7 +97,7 @@ export default function InteractiveDemo() {
           <div className='w-full md:w-full md:flex md:flex-row md:gap-4 md:order-2 lg:order-none lg:w-[360px] lg:flex-none lg:flex-col lg:space-y-4 xl:w-[384px] flex-shrink-0 space-y-4 md:space-y-0 rounded-[12px] sm:rounded-[14px] md:rounded-[16px]'>
             {/* Progress Tracker background: linear-gradient(180deg, rgba(67, 55, 51, 0) 0%, #433733 45.27%);
  background: linear-gradient(180deg, rgba(67, 55, 51, 0) 0%, #433733 45.27%) */}
-            {/* <div style={{ background: 'linear-gradient(180deg, #E7C25B 0%,  #433733 45.27%)' }} className='rounded-xl p-3 sm:p-4 md:p-5'> */}
+
             <div style={{background: 'linear-gradient(180deg, rgba(226, 207, 103, 0.7) 0%, rgba(67, 55, 51, 0) 100%)'}}  className='rounded-xl  md:flex-1 md:min-w-0'>
               <div style={{background: 'linear-gradient(180deg, rgba(67, 55, 51, 0) 0%, #433733 45.27%)'}} className='  rounded-xl p-5'>
               <h3 className='font-helvetica  font-bold text-[14px] sm:text-[15px] md:text-[16px] leading-[100%] tracking-[0%] text-white mb-3 sm:mb-4'>Progress Tracker</h3>
@@ -158,7 +158,7 @@ export default function InteractiveDemo() {
               </div>
               <div className='flex justify-center items-center md:shrink-0'>
 
-              {/* <button className='w-[280px] md:w-[336px] mx-auto font-normal border mt-3 sm:mt-4 border-[#F26E3E] rounded-[12px] sm:rounded-[16px] px-4 py-2.5 text-[11px] sm:text-[12px] leading-[1] tracking-[0] text-center text-white hover:bg-[#F26E3E]/10 transition-colors'> */}
+       
               <button className='md:w-full mt-4 w-[280px] py-2.5 sm:py-3 border border-[#F36E3F] hover:bg-[#F36E3F]/10 rounded-full text-white font-semibold text-sm sm:text-[15px] md:text-base font-sharp  flex items-center justify-center shadow-[0px_4px_4px_0px_#00000040] gap-2 mx-auto'>
                 Update Details
               </button>
